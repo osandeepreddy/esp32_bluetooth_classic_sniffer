@@ -12,7 +12,7 @@ WORKDIR /esp32_bluetooth_classic_sniffer
 ## TODO: ADD YOUR BUILD INSTRUCTIONS HERE.
 RUN mkdir build
 WORKDIR build
-RUN sudo apt-get install zstd
+RUN apt-get install zstd
 RUN CC=clang CXX=clang++ cmake ..
 RUN make
 
